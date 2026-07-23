@@ -1,7 +1,27 @@
 aid: allsale-corp
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/allsale-corp.png
 name: ALLSALE Corp.
-description: ALLSALE Corp. is a company surfaced as a portfolio company of 500-global and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: ALLSALE Corp. operates ALLSALE, a TikTok Shop growth and creator-marketing
+  automation platform for consumer brands. It runs three AI agents — a Creator Discovery
+  Agent that finds and engages relevant TikTok creators, a Budget Optimization Agent
+  that recommends budget allocation and commission adjustments, and a Performance Analyst
+  Agent that tracks GMV and predicts results — automating the full workflow from creator
+  discovery and outreach through performance tracking and ROI analysis. The company
+  is a 500 Global portfolio company and reports 100K+ creators engaged and $50M+ in
+  customer revenue generated across its brand clients. Plans run from a $399/month
+  Starter tier to a $599/month Pro tier, with custom Enterprise pricing offering unlimited
+  messaging, multi-brand support, and white-label options.
 url: https://raw.githubusercontent.com/api-evangelist/allsale-corp/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -14,6 +34,13 @@ created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
+- TikTok Shop
+- Creator Marketing
+- Influencer Marketing
+- Social Commerce
+- E-commerce
+- Marketing Automation
+- AI Agents
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +48,24 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/allsale-corp-domain-security.yml
 - type: Website
   url: https://allsale.ai
+- type: Pricing
+  url: https://allsale.ai/#pricing
+- type: SignUp
+  url: https://brand.allsale.ai/signup
+- type: Login
+  url: https://brand.allsale.ai/signin
+- type: TermsOfService
+  url: https://allsale.ai/terms
+- type: PrivacyPolicy
+  url: https://allsale.ai/privacy
+- type: Support
+  url: mailto:sale@allsale.ai
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
