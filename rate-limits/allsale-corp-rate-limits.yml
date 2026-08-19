@@ -1,0 +1,25 @@
+generated: '2026-08-13'
+method: searched
+source: https://allsale.ai/#pricing
+limit_count: 0
+note: >-
+  ALLSALE publishes no API rate limits. There is no developer portal, API reference or
+  machine-readable spec on any ALLSALE-operated host, so there is nothing that documents a
+  window, a burst, a 429 response, or any X-RateLimit-*/RateLimit-*/Retry-After response
+  header. The only published numeric ceilings are PRODUCT quotas attached to subscription
+  tiers (creators discovered per month, outreach DMs per month) — they are recorded in
+  plans/allsale-corp-plans-pricing.yml and are deliberately NOT restated here as API
+  limits, because they govern platform usage rather than API requests. No RateLimits
+  pointer is emitted in apis.yml: an honest zero must not be scored as a published
+  rate-limit signal.
+limits: []
+response_headers: []
+exhaustion_status: null
+product_quotas_reference: plans/allsale-corp-plans-pricing.yml
+x-evidence:
+- url: https://allsale.ai/#pricing
+  status: 200
+- url: https://allsale.ai/docs
+  status: 404
+- url: https://allsale.ai/api
+  status: 404

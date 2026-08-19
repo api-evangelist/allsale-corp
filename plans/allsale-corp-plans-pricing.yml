@@ -1,0 +1,77 @@
+generated: '2026-08-13'
+method: searched
+source: https://allsale.ai/#pricing
+docs: https://allsale.ai/#pricing
+note: >-
+  Product-subscription pricing for the ALLSALE TikTok Shop creator-marketing platform.
+  ALLSALE publishes no separate API pricing or metered API plan — API access appears only
+  as a bullet inside the custom-priced Enterprise tier. Quotas below are product quotas
+  (creators discovered, DMs sent), not API request allowances.
+currency: USD
+billing_period: month
+plan_count: 3
+plans:
+- name: Starter
+  price: 399
+  currency: USD
+  billing_period: month
+  price_display: "$399/month"
+  audience: brands starting on TikTok Shop
+  limits:
+    tiktok_shop_stores: 1
+    team_members: 2
+    creators_discovered_per_month: 500
+    outreach_dms_per_month: 1000
+  features:
+  - Find creators (500/mo)
+  - Send outreach (1,000 DMs/mo)
+  - Track performance dashboard
+  - Email support
+  - Campaign templates
+  api_access: false
+- name: Pro
+  price: 599
+  currency: USD
+  billing_period: month
+  price_display: "$599/month"
+  audience: growing brands
+  most_popular: true
+  limits:
+    outreach_dms_per_month: 10000
+    outreach_dms_note: "10,000+ DMs/mo"
+  features:
+  - AI Agent handles outreach + follow-ups (10,000+ DMs/mo)
+  - See GMV / orders / ROI by creator, SKU, and video
+  - Agent recommends budget shifts and commission changes
+  - Priority onboarding & live support
+  - Priority support
+  - AI-powered templates
+  api_access: false
+- name: Enterprise
+  price: null
+  price_display: Custom pricing
+  audience: agencies and multi-brand operators
+  limits:
+    messaging: unlimited
+    brands: multi-brand
+  features:
+  - Everything in Pro
+  - Unlimited messaging and multi-brand support
+  - White-label / API / custom workflows
+  - Dedicated account manager / compliance
+  - Custom API integrations
+  - Enterprise security
+  api_access: true
+  api_access_note: >-
+    "White-label / API / custom workflows" and "Custom API integrations" are listed as
+    Enterprise-tier features. No developer portal, API reference, machine-readable spec,
+    key-issuance flow or API price is published anywhere on the public site; access runs
+    through the custom-pricing sales motion.
+overage: null
+free_tier: false
+trial: false
+x-evidence:
+- url: https://allsale.ai/#pricing
+  status: 200
+- url: https://www.allsale.ai/
+  status: 200

@@ -1,0 +1,105 @@
+generated: '2026-08-13'
+method: probed
+source: live HTTP probes of every ALLSALE-operated host
+note: >-
+  Every /.well-known/ path probed returned 404 (or a 307 to www.allsale.ai which then
+  404s). NO WellKnown or SecurityTxt pointer is emitted in apis.yml — this file records a
+  verified ABSENCE, not a presence. admin.allsale.ai answers HTTP 200 with the same
+  12,830-byte HTML single-page-app shell for every path including /.well-known/*, so its
+  200s are catch-all responses and are recorded as misses, not documents.
+hosts:
+- host: https://allsale.ai
+  role: marketing site (redirects 307 to https://www.allsale.ai)
+  documents:
+  - path: /.well-known/security.txt
+    status: 307
+    redirect: https://www.allsale.ai/.well-known/security.txt
+  - path: /.well-known/openid-configuration
+    status: 307
+  - path: /.well-known/oauth-authorization-server
+    status: 307
+  - path: /.well-known/api-catalog
+    status: 307
+  - path: /.well-known/ai-plugin.json
+    status: 307
+  - path: /.well-known/agent-card.json
+    status: 307
+  - path: /.well-known/agent.json
+    status: 307
+- host: https://www.allsale.ai
+  role: canonical marketing site
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+- host: https://brand.allsale.ai
+  role: brand application (sign-up / sign-in); NestJS backend under /api
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+- host: https://app.allsale.ai
+  role: application host
+  documents:
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+- host: https://admin.allsale.ai
+  role: admin single-page app
+  documents:
+  - path: /.well-known/agent-card.json
+    status: 200
+    accepted: false
+    reject_reason: >-
+      HTML single-page-app catch-all (text/html, 12830 bytes, byte-identical to /
+      and to every other unmatched path). Not a document.
+  - path: /.well-known/agent.json
+    status: 200
+    accepted: false
+    reject_reason: same SPA catch-all shell
+- host: https://www.affitok.ai
+  role: >-
+    ALLSALE product application host (footer reads "© 2026 ALLSALE. All rights
+    reserved."); allsale.ai's own Login button links to https://www.affitok.ai/login
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+summary:
+  paths_probed: 33
+  documents_found: 0
+  security_txt: false
+  openid_configuration: false
+  oauth_authorization_server: false
+  api_catalog: false
+  agent_card: false
