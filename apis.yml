@@ -22,7 +22,7 @@ accessModel:
   generated: '2026-07-22'
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/allsale-corp.png
-name: ALLSALE Corp.
+name: ALLSALE
 description: ALLSALE Corp. operates ALLSALE, a TikTok Shop growth and creator-marketing
   automation platform for consumer brands. It runs three AI agents — a Creator Discovery
   Agent that finds and engages relevant TikTok creators, a Budget Optimization Agent
@@ -122,3 +122,4 @@ x-coverage:
   - url: https://www.allsale.ai/.well-known/agent-card.json
     status: 404
   checked: '2026-08-13'
+x-legal-name: ALLSALE Corp.
