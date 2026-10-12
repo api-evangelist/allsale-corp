@@ -1,0 +1,18 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/allsale-corp/integrations
+- https://zapier.com/apps/allsale/integrations
+- https://n8n.io/integrations/allsale-corp/
+- https://composio.dev/toolkits/allsale-corp
+- https://monid.ai/tools/allsale-corp
+checked:
+- https://composio.dev/toolkits/allsale-corp
+- https://monid.ai/tools/allsale-corp
+- https://n8n.io/integrations/allsale-corp/
+- https://zapier.com/apps/allsale-corp/integrations
+- https://zapier.com/apps/allsale/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
